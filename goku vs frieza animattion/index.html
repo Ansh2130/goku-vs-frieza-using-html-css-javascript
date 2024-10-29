@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Goku vs Frieza</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="scene">
+    <!-- Background Image -->
+    <div class="background"></div>
+
+    <!-- Goku -->
+    <div class="goku">
+      <img src="goku3.png" class="character-img" alt="Goku">
+    </div>
+
+    <!-- Frieza -->
+    <div class="frieza">
+      <img src="frieza3.png" class="character-img" alt="Frieza">
+    </div>
+
+    <!-- Spirit Bomb -->
+    <div class="spirit-bomb hidden"></div>
+
+    <!-- Health Bars -->
+    <div class="health-bar goku-health">
+      <div class="health-fill" id="goku-fill" style="width: 100%;"></div>
+    </div>
+    <div class="health-bar frieza-health">
+      <div class="health-fill" id="frieza-fill" style="width: 100%;"></div>
+    </div>
+
+    <!-- Lightning Effects -->
+    <div class="lightning lightning1"></div>
+    <div class="lightning lightning2"></div>
+
+    <!-- Victory Message -->
+    <div id="victory-message" class="hidden">Goku Wins!</div>
+
+    <!-- Battle Text -->
+    <div id="battle-text" class="hidden">Spirit Bomb Launched!</div>
+  </div>
+
+  <button id="launch-button">Launch Spirit Bomb</button>
+
+  <audio id="explosion-sound" src="explosion.mp3" preload="auto"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
